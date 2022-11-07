@@ -359,7 +359,8 @@ img {
 .social-link:hover .icon-team,
 .social-link:focus .icon-team,
 .social-item:hover,
-.social-item:focus {
+.social-item:focus,
+.social-link:focus {
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
 }
@@ -391,10 +392,11 @@ img {
     fill: var(--fill-icon);
 }
 
-.client-link:hover, 
-.client-link:focus,
-.clients-icon:hover,
-.client-icon:focus{
+.client-link:hover .clients-icon,
+.client-link:hover,
+.client-link:focus .clients-icon,
+.client-link:focus
+ {
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -554,7 +556,8 @@ img {
 .portfolio-button:hover,
 .portfolio-button:focus {
     background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--primary-white-color);
 }
 
 /* -- Gallery -- */
